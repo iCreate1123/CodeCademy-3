@@ -5,7 +5,6 @@ html {
   color: seashell;
   background-color: black;
   opacity: 0.9;
-  text-align: center;
 }
 
 *,
@@ -14,4 +13,46 @@ html {
   box-sizing: inherit;
   padding: 0;
   margin: 0;
+}
+
+/* header style */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px; /* Add padding to the header */
+  z-index: 1000; /* Set a z-index to ensure it appears above other elements */
+  min-height: 69px;
+  border-bottom: 1px solid seashell;
+}
+
+.navheader ul li {
+  display: inline;
+  margin-right: 1rem;
+}
+
+.navheader ul li a {
+  text-decoration: underline;
+}
+
+.navheader ul li a:hover {
+  cursor: pointer;
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+  text-shadow: 0 0 1px #fff;
+}
+
+/* body styling */
+
+.mission {
+  display: flex;
+  background-image: url(images/img-mission-background.webp);
+  background-repeat: no-repeat;
+  height: 700px;
 }
