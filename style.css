@@ -26,9 +26,7 @@ html {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 10px; /* Add padding to the header */
   z-index: 1000; /* Set a z-index to ensure it appears above other elements */
-  min-height: 69px;
   border-bottom: 1px solid seashell;
 }
 
@@ -50,9 +48,111 @@ html {
 
 /* body styling */
 
+/* mission section */
 .mission {
   display: flex;
-  background-image: url(images/img-mission-background.webp);
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin-top: 95px;
+  margin-bottom: 95px;
+}
+
+.mission img {
+  width: 85vw;
+}
+
+.missiontext {
+  background-color: black;
+  display: block;
+  position: absolute;
+  top: 600px;
+  width: 86%;
+  height: 90px;
+  z-index: 1;
+}
+
+.missiontext h2 {
+  padding-top: 8px;
+  padding-bottom: 10px;
+}
+
+/* monthly tea section */
+.teaheading {
+  text-align: center;
+  margin: 20px;
+}
+.teaheading h2 {
+  padding: 20px;
+}
+
+.monthly_tea {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: space-evenly;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.one img,
+.two img,
+.three img,
+.four img,
+.five img {
+  width: 300px;
+  height: 200px;
+  margin: 10px;
+  padding: 10px;
+}
+
+/* locations section */
+
+#locationsh2 {
+  position: relative;
+  top: 100px;
+  text-align: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+.locations {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-image: url(images/img-locations-background.webp);
   background-repeat: no-repeat;
-  height: 700px;
+  background-position: center;
+  background-size: 80%;
+  align-items: center;
+  height: 600px;
+}
+
+.locations div {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  justify-content: center;
+  background-color: black;
+}
+
+.locations div p {
+  padding: 20px;
+  opacity: 1;
+}
+
+/* contact  */
+
+.contact {
+  text-align: center;
+  margin: 20px;
+}
+.contact h2 {
+  padding: 30px;
+}
+.contact h5 {
+  padding: 20px;
 }
